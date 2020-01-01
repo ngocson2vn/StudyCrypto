@@ -7,7 +7,7 @@ p = 487
 def lx():
     retx = []
     rety = []
-    for x in xrange(p):
+    for x in range(p):
         retx.append(x)
         y = (4*x + 83) % p
         rety.append(y)
@@ -19,7 +19,7 @@ def fx(x):
 
 def scan(s, n):
     ret = []
-    for y in xrange(n):
+    for y in range(n):
         if y*y % n == s:
             ret.append(y)
 
@@ -34,7 +34,7 @@ def points_generator(n, x_coords, y_coords):
             s = s % n
             ret = scan(s, n)
             for y in ret:
-                print x, y 
+                print(x, y)
                 x_coords.append(x)
                 y_coords.append(y)
 

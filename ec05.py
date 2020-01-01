@@ -8,7 +8,7 @@ def fx(x):
 
 def scan(s, n):
     ret = []
-    for y in xrange(n + 1):
+    for y in range(n + 1):
         if y*y % n == s:
             ret.append(y)
 
@@ -24,7 +24,7 @@ def points_generator(n, x_coords, y_coords):
             s = s % n
             ret = scan(s, n)
             for y in ret:
-                print x, y 
+                print(x, y)
                 x_coords.append(x)
                 y_coords.append(y)
 

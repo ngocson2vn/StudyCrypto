@@ -10,7 +10,7 @@ def fx(x):
     return x*(x**2) + 2*x + 3
 
 def points_generator(n, x_coords, y_coords):
-    for x in xrange(0, n):
+    for x in range(0, n):
         y = math.sqrt(fx(x))
         x_coords.append(x)
         y_coords.append(y)
